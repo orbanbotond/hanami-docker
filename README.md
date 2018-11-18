@@ -46,3 +46,8 @@ Create your db:
 
 ### Final step
 Open [http://localhost:2300](http://localhost:2300) in your browser! :champaign:
+
+
+Note:
+The project was inspired by https://github.com/gruz0
+https://github.com/gruz0/hanami-docker
