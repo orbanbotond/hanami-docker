@@ -1,23 +1,24 @@
 .PHONY: help dockerize shell shutdown
 
 help:
-    @echo 'Available targets:'
-    @echo '  make dockerize'
-    @echo '  make shell'
-    @echo '  make new'
-    @echo '  make shutdown'
+	@echo 'Available targets:'
+	@echo '  make dockerize'
+	@echo '  make shell'
+	@echo '  make new'
+	@echo '  make shutdown'
+	@echo '  make launch'
 
 launch:
-    docker-compose up
+	docker-compose up
 
 dockerize:
-    docker-compose up --build
+	docker-compose up --build
 
 shell:
-    docker-compose exec web sh
+	docker-compose exec web sh
 
 new:
-    docker-compose run web hanami new . --database=postgres
+	docker-compose run web hanami new . --database=postgres
 
 shutdown:
-    docker-compose down
+	docker-compose down
